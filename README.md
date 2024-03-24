@@ -43,7 +43,9 @@
      
 
 ```
+
+###  Now to apply SRP we can seperate Responsibility into two seperate Classes.
      
- 
+### <ins>Good Example: </ins>
 
  
