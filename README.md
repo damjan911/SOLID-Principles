@@ -5,6 +5,7 @@
    - [S: Single Responsibility Principle (SRP)](#features)
    - [O: Open-closed Principle (OCP)](#features)
    - [L: Liskov substitution Principle (LSP)](#features)
+   - [I: Interface Segregation Principle (ISP)](#features)
      
  
 
