@@ -15,7 +15,7 @@
 
 ### Here is the Single Responsibility Principle (SRP) with examples in C#:
 
-### <ins>Bad Examole: </ins>
+### <ins>Bad Example: </ins>
      
  
 
