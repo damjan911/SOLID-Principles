@@ -113,7 +113,7 @@
     }
 
 ```
-### Now to apply OCP we need to utilize Inheritance as a one of the fourth pillars of Object-oriented programming Language.
+### Now to apply OCP we need to utilize Inheritance as one of the fourth pillars of Object-oriented programming Language.
 
 ### <ins>Good Example: </ins>
 
