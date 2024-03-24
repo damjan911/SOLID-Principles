@@ -112,5 +112,49 @@
        }
     }
 
-``` 
+```
+### Now to apply OCP we need to utilize Inheritance as a one of the fourth pillars of Object-oriented programming Language.
+
+### <ins>Good Example: </ins>
+
+```
+   // Example of OCP
+   public abstract class Shape
+   {
+      public abstract double Area();
+   }
+
+   public class Rectangle : Shape
+   {
+      public double Width { get; set; }
+      public double Height { get; set; }
+
+      public override double Area()
+      {
+         return Width * Height;
+      }
+   }
+
+   public class Circle : Shape
+   {
+      public double Radius { get; set; }
+
+      public override double Area()
+      {
+         return Math.PI * Radius * Radius;
+      }
+   }
+
+   public class Triangle : Shape
+   {
+      public double Base { get; set; }
+      public double Height { get; set; }
+
+      public override double Area()
+      {
+         return 0.5 * Base * Height;
+      }
+   }
+
+```
  
