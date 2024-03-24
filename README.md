@@ -160,4 +160,76 @@
 # Liskov Substitution Principle (LSP)
 
 ### <ins>IMPORTANT:</ins> The Liskov Substitution Principle (LSP) states that an Object of a child class must be able to replace an Object of the parent Class withouth breaking the Application.
+
+### Here is the Liskov Substitution Principle (LSP) with examples in C#:
+
+### <ins>Bad Example: </ins>
+
+```
+    public abstract class Animal
+    {
+         // Method Declared.
+         public abstract void Fly();
+    }
+
+    public class Bird : Animal
+    {
+       public virtual void Fly()
+       {
+          Console.WriteLine("Bird flying");
+       }
+    }
+
+    public class Duck : Animal
+    {
+       public virtual void Fly()
+       {
+          Console.WriteLine("Duck flying");
+       }
+
+     }
+
+     public class Ostrich : Animal
+     {
+        public virtual void Fly()
+        { 
+           Console.WriteLine("Ostrich flying");
+        }
+     }
+
+```
+### The reason this is a bad example is that ostriches are large flightless birds!
+
+### Now to apply LSP we need to throw an Exception for Ostrich in the Fly Method, because as I said the Ostriches are flightless birds.
+
+### <ins>Good Example: </ins>
+
+```
+   // Example of LSP
+   public class Bird
+   {
+       public virtual void Fly()
+       {
+           Console.WriteLine("Bird flying");
+       }
+   }
+
+   public class Duck : Bird
+   {
+       public override void Fly()
+       {
+          Console.WriteLine("Duck flying");
+       }
+  }
+
+   public class Ostrich : Bird
+   {
+      public override void Fly()
+      {
+         throw new NotImplementedException();
+      }
+  }
+
+
+``` 
  
