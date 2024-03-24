@@ -157,4 +157,7 @@
    }
 
 ```
+# Liskov Substitution Principle (LSP)
+
+### <ins>IMPORTANT:</ins> The Liskov Substitution Principle (LSP) states that an Object of a child class must be able to replace an Object of the parent Class withouth breaking the Application.
  
