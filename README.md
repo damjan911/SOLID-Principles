@@ -48,4 +48,28 @@
      
 ### <ins>Good Example: </ins>
 
+```
+    public class Employee
+    {
+       public int CalculateSalary()
+       {
+           return 100000;
+       }
+
+       public string GetDepartment()
+       {
+           return "IT";
+       }
+    }
+
+    public class EmployeeRepository
+    {
+       public void Save()
+       {
+          // Save Employee to the DataBase.
+       }
+    }
+
+```
+
  
