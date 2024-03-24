@@ -11,7 +11,7 @@
 
 # Single Responsibility Principle (SRP)
 
-### IMPORTANT: This principle states that a class should have only one reason to change, meaning it should have only one responsibility or job.
+### <ins>IMPORTANT:</ins> This principle states that a class should have only one reason to change, meaning it should have only one responsibility or job.
 
 ### Here is the Single Responsibility Principle (SRP) with examples in C#:
 
