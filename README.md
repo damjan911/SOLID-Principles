@@ -198,7 +198,6 @@
      }
 
 ```
-### The reason this is a bad example is that ostriches are large flightless birds!
 
 ### Now to apply LSP we need to throw an Exception for Ostrich in the Fly Method, because as I said the Ostriches are flightless birds.
 
