@@ -16,6 +16,33 @@
 ### Here is the Single Responsibility Principle (SRP) with examples in C#:
 
 ### <ins>Bad Example: </ins>
+
+``` // Violating SRP, because the Class has extra Responsibility.
+
+ public class Employee
+ {
+    // Own Responsibility
+    public int CalculateSalary()
+    {
+        return 100000;
+    }
+
+     // Own Responsibility
+    public string GetDepartment()
+    {
+        return "IT";
+    }
+
+    // Extra Responsibility
+
+    public void Save()
+    {
+       // Save Employee to the DataBase.
+    }
+ }
+     
+
+```
      
  
 
