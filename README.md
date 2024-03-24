@@ -7,6 +7,9 @@
    - [L: Liskov substitution Principle (LSP)](#features)
    - [I: Interface Segregation Principle (ISP)](#features)
    - [D: Dependency Inversion Principle (DIP)](#features)
+
+
+# Single Responsibility Principle (SRP)
      
  
 
