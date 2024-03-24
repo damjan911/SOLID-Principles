@@ -75,5 +75,42 @@
 
 # Open/Closed Principle (OCP)
 
-### Open/Closed Principle (OCP) states that software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. In other words, you should be able to extend a class's behavior without modifying its source code.
+### <ins>IMPORTANT:</ins> Open/Closed Principle (OCP) states that software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. In other words, you should be able to extend a class's behavior without modifying its source code.
+
+### Here is the Single Open/Closed Principle (OCP) with examples in C#:
+
+### <ins>Bad Example: </ins>
+
+```
+    public enum ShapeType
+    {
+        Rectangle,
+        Circle,
+        Triangle
+    }
+    public class Shape
+    {
+       // Bad example violating OCP
+       public ShapeType ShapeType {get; set;}
+
+       public double CalculateArea ()
+       {
+             double Width;
+             double Height;
+             double Radius;
+
+           if(ShapeType == "Rectangle")
+           {
+              return Width * Height;
+           }
+           else if(ShapeType == "Circle")
+           {
+              return Math.PI * Radius * Radius;
+           }
+
+           return return 0.5 * Base * Height;
+       }
+    }
+
+``` 
  
