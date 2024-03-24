@@ -21,24 +21,24 @@
 
  public class Employee
  {
-    // Own Responsibility
-    public int CalculateSalary()
-    {
-        return 100000;
-    }
+     // Own Responsibility
+     public int CalculateSalary()
+     {
+         return 100000;
+     }
 
      // Own Responsibility
-    public string GetDepartment()
-    {
-        return "IT";
-    }
+     public string GetDepartment()
+     {
+         return "IT";
+     }
 
-    // Extra Responsibility
+     // Extra Responsibility
 
-    public void Save()
-    {
-       // Save Employee to the DataBase.
-    }
+     public void Save()
+     {
+        // Save Employee to the DataBase.
+     }
  }
      
 
