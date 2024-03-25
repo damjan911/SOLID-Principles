@@ -279,6 +279,7 @@
 ### <ins>Good Example: </ins>
 
 ```
+    // Good example following ISP
     public interface IDrive
     {
         void Drive();
@@ -316,6 +317,79 @@
 ```
 
 # Dependency Inversion Principle (DIP)
+
+### The Dependency Inversion Principle (DIP) states that high-level modules should not depend on low-level modules. It encourages loose coupling between modules and facilitates easier unit testing and maintainability.
+
+### Here is the Dependency Inversion Principle (DIP) with examples in C#:
+
+### <ins>Bad Example: </ins>
+
+```
+   // Bad example violating DIP
+   public class DataAccess
+   {
+      public void SaveData(string data)
+      {
+        // Code to save data to a specific database
+      }
+   }
+
+   public class UserService
+   {
+      private readonly DataAccess _dataAccess;
+
+      public UserService()
+      {
+         _dataAccess = new DataAccess();
+      }
+
+    public void CreateUser(string username, string password)
+    {
+           // Code to create a user
+
+          _dataAccess.SaveData("User created: " + username);
+    }
+}
+
+```
+
+### Now to apply (DIP) high-level modules and low-level modules should depend on abstractions.
+
+### <ins>Good Example: </ins>
+
+```
+   // Good example following DIP
+   public interface IDataAccess
+   {
+         void SaveData(string data);
+   }
+
+   public class DataAccess : IDataAccess
+   {
+       public void SaveData(string data)
+       {
+          // Code to save data to a specific database
+       }
+  }
+
+  public class UserService
+  {
+      private readonly IDataAccess _dataAccess;
+
+      public UserService(IDataAccess dataAccess)
+      {
+         _dataAccess = dataAccess;
+      }
+
+      public void CreateUser(string username, string password)
+      {
+         // Code to create a user
+
+         _dataAccess.SaveData("User created: " + username);
+      }
+ }
+  
+```
 
 
 
