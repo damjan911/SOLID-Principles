@@ -193,7 +193,7 @@
      {
         public virtual void Fly()
         { 
-           Console.WriteLine("Ostrich flying");
+           Console.WriteLine("Ostrich cannot flying");
         }
      }
 
