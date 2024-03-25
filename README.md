@@ -280,6 +280,7 @@
 
 ```
     // Good example following ISP
+
     public interface IDrive
     {
         void Drive();
@@ -326,6 +327,7 @@
 
 ```
    // Bad example violating DIP
+
    public class DataAccess
    {
       public void SaveData(string data)
@@ -359,6 +361,7 @@
 
 ```
    // Good example following DIP
+
    public interface IDataAccess
    {
          void SaveData(string data);
