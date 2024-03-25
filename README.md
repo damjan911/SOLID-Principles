@@ -234,7 +234,21 @@
 
 # Interface Segregation Principle (ISP)
 
-### <ins>IMPORTANT:</ins> The Interface Segregation Principle (ISP) states that clients should not be forced to depend on interfaces they do not use. In other words, it's better to have many small, specific interfaces than one large
+### <ins>IMPORTANT:</ins> The Interface Segregation Principle (ISP) states that clients should not be forced to depend on interfaces they do not use. In other words, it's better to have many small, specific interfaces than one large.
+
+### <ins>Bad Example: </ins>
+
+```
+    public interface IVehicle
+    {
+        void Drive();
+
+        void Fly();
+    }
+
+    public class 
+
+```
 
 
 
