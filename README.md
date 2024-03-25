@@ -276,6 +276,47 @@
 
 ### Now to apply (ISP) it's better to have many small, specific interfaces than one large.
 
+### <ins>Good Example: </ins>
+
+```
+    public interface IDrive
+    {
+        void Drive();
+
+        void Fly();
+    }
+
+    public interface IFly
+    {
+        void Fly();
+    }
+
+    public class Car : IDrive
+    {
+        public void Drive()
+        {
+            Console.WriteLine("Drive Car");
+        }
+
+    }
+
+    public class FlyingCar : IDrive, IFly
+    {
+        public void Drive()
+        {
+           Console.WriteLine("Drive Car");
+        }
+
+        public void Fly()
+        {
+           Console.WriteLine("Fly Car");
+        }
+    }
+
+```
+
+# Dependency Inversion Principle (DIP)
+
 
 
 
