@@ -182,7 +182,7 @@
 
     public class Duck : Animal
     {
-       public virtual void Fly()
+       public override void Fly()
        {
           Console.WriteLine("Duck flying");
        }
@@ -191,15 +191,15 @@
 
      public class Ostrich : Animal
      {
-        public virtual void Fly()
-        { 
-           Console.WriteLine("Ostrich cannot flying");
+        public override void Fly()
+        {
+           throw new NotImplementedException();
         }
      }
 
 ```
 
-### Now to apply LSP we need to throw an Exception for Ostrich in the Fly Method, because as I said the Ostriches are flightless birds.
+### Now to apply LSP we don't need to throw an Exception for Ostrich in the Fly Method, althought the Ostriches are flightless birds.
 
 ### <ins>Good Example: </ins>
 
@@ -225,7 +225,7 @@
    {
       public override void Fly()
       {
-         throw new NotImplementedException();
+           Console.WriteLine("Ostrich cannot flying");
       }
   }
 
