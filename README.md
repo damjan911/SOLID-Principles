@@ -284,8 +284,6 @@
     public interface IDrive
     {
         void Drive();
-
-        void Fly();
     }
 
     public interface IFly
