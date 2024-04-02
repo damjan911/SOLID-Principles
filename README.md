@@ -64,7 +64,7 @@
 
     public class EmployeeRepository
     {
-       public void Save()
+       public void Save(Employee employee)
        {
           // Save Employee to the DataBase.
        }
